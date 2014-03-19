@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Sort customer groups by customer group code in select boxes
+ *
+ * @category   Mage
+ * @package    Mage_Customer
+ * @author     Thomas Birke <tbirke@netextreme.de>
+ */
+-->
+<config>
+    <modules>
+        <Quafzi_SortedCustomerGroups>
+            <version>0.1.0</version>
+        </Quafzi_SortedCustomerGroups>
+    </modules>
+    <global>
+        <models>
+            <customer>
+                <rewrite>
+                    <customer_attribute_source_group>Quafzi_SortedCustomerGroups_Model_Customer_Attribute_Source_Group</customer_attribute_source_group>
+                </rewrite>
+            </customer>
+        </models>
+    </global>
+</config>
