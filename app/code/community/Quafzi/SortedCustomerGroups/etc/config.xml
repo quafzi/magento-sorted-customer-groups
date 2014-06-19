@@ -22,5 +22,12 @@
                 </rewrite>
             </customer>
         </models>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <customer_grid>Quafzi_SortedCustomerGroups_Block_Adminhtml_Customer_Grid</customer_grid>
+                </rewrite>
+            </adminhtml>
+        </blocks>
     </global>
 </config>
